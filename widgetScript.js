@@ -113,7 +113,9 @@ function __makebetaiframebetaiframe657f4cb99ede4() {
     
     let params = new URL(document.location).searchParams;
     let widgetURL = params.get("BETAWidgetURL");
-    
+    if (!widgetURL) {
+        return
+    }
     try {
         if (document.getElementById("beta-iframe-spinner")) {
             document.write("<div><br/><b><em>Error: Only one embedded booking widget is allowed per page.</em></b><br/></div>");
