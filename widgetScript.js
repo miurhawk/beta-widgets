@@ -110,9 +110,14 @@ function __iframebetaiframe657f4cb99ede4yoffset() {
 }
 
 function __makebetaiframebetaiframe657f4cb99ede4() {
-    
-    let params = new URL(document.location).searchParams;
-    let widgetURL = params.get("BETAWidgetURL");
+    // e.preventDefault()
+    // console.log(e)
+    let aElement = document.getElementById('betaLink')
+    let widgetURL = aElement.href;
+
+    // let params = new URL(document.location).searchParams;
+    // let widgetURL = params.get("BETAWidgetURL");
+    // let widgetURL = e.target.href;
     if (!widgetURL) {
         return;
     }
@@ -239,7 +244,7 @@ if (__isIE9OrLess()) {
     if (__isMobileDevice() && __isSmallScreen() && __isOKToRedirect()) {
         __redirectToMobile();
     } else {
-        document.getElementById('betaLink').onclick = __makebetaiframebetaiframe657f4cb99ede4;
+        __makebetaiframebetaiframe657f4cb99ede4();
     }
 }
 
