@@ -114,7 +114,7 @@ function __makebetaiframebetaiframe657f4cb99ede4() {
     let params = new URL(document.location).searchParams;
     let widgetURL = params.get("BETAWidgetURL");
     if (!widgetURL) {
-        return
+        return;
     }
     try {
         if (document.getElementById("beta-iframe-spinner")) {
@@ -239,7 +239,7 @@ if (__isIE9OrLess()) {
     if (__isMobileDevice() && __isSmallScreen() && __isOKToRedirect()) {
         __redirectToMobile();
     } else {
-    __makebetaiframebetaiframe657f4cb99ede4();
+        document.getElementById('betaLink').onclick = __makebetaiframebetaiframe657f4cb99ede4();
     }
 }
 
