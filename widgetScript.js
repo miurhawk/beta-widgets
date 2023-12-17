@@ -84,11 +84,17 @@ function __isSmallScreen() {
 }
 
 function __redirectToMobile() {
-    window.location="https://app.rockgympro.com/b/widget/?a=list&&widget_guid=47fbef8f89cf4417b07194d8e994e5cf&random=657f4cb99ed1c&iframeid=&mode=e&lang=english";
+    let params = new URL(document.location).searchParams;
+    let widgetURL = params.get("BETAWidgetURL");
+    // let age = parseInt(params.get("age")); // is the number 18
+    window.location=widgetURL;
 }
 
 function __makebutton() {
-document.write("<a href='https://app.rockgympro.com/b/widget/?a=list&&widget_guid=47fbef8f89cf4417b07194d8e994e5cf&random=657f4cb99ed1c&iframeid=&mode=e&lang=english&want_biz_title'style='-webkit-border-radius: 10;-moz-border-radius: 10;border-radius: 10px;color: #ffffff;background-color: blue;font-size: 25px;padding: 10px 20px 10px 20px;text-decoration: none;display:inline-block;margin:20px;'target='_blank'>Click to Book Now</a>");
+    
+    let params = new URL(document.location).searchParams;
+    let widgetURL = params.get("BETAWidgetURL");
+document.write("<a href='"+widgetURL+"'style='-webkit-border-radius: 10;-moz-border-radius: 10;border-radius: 10px;color: #ffffff;background-color: blue;font-size: 25px;padding: 10px 20px 10px 20px;text-decoration: none;display:inline-block;margin:20px;'target='_blank'>Book Here</a>");
 }
 
 
@@ -104,14 +110,18 @@ function __iframebetaiframe657f4cb99ede4yoffset() {
 }
 
 function __makebetaiframebetaiframe657f4cb99ede4() {
+    
+    let params = new URL(document.location).searchParams;
+    let widgetURL = params.get("BETAWidgetURL");
+    
     try {
         if (document.getElementById("beta-iframe-spinner")) {
             document.write("<div><br/><b><em>Error: Only one embedded booking widget is allowed per page.</em></b><br/></div>");
             return;
         }
         document.write("<div>");
-        document.write("<div id='beta-iframe-spinner' style='display:block; position: absolute; '><img src='https://app.rockgympro.com/b/widget/img/ajax-loader.gif'/></div>");
-        document.write("<iframe id='betaiframe657f4cb99ede4' src='https://demo.sendmoregetbeta.com/waiver-fill?gym_key=1&keys=1,2,3,4,5' width=100% height=50 scrolling='no' style='border:0px;'></iframe>");
+        document.write("<div id='beta-iframe-spinner' style='display:block; position: absolute; '><img src='http://www.makeitmove.co.uk/'/></div>");
+        document.write("<iframe id='betaiframe657f4cb99ede4' src='"+widgetURL+"' width=100% height=50 scrolling='no' style='border:0px;'></iframe>");
         document.write("</div>")
 
         var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
