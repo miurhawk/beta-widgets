@@ -239,7 +239,7 @@ if (__isIE9OrLess()) {
     if (__isMobileDevice() && __isSmallScreen() && __isOKToRedirect()) {
         __redirectToMobile();
     } else {
-        document.getElementById('betaLink').onclick = __makebetaiframebetaiframe657f4cb99ede4();
+        document.getElementById('betaLink').onclick = __makebetaiframebetaiframe657f4cb99ede4;
     }
 }
 
