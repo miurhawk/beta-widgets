@@ -120,7 +120,7 @@ function __makebetaiframebetaiframe657f4cb99ede4() {
             return;
         }
         document.write("<div>");
-        document.write("<div id='beta-iframe-spinner' style='display:block; position: absolute; '><img src='http://www.makeitmove.co.uk/'/></div>");
+        // document.write("<div id='beta-iframe-spinner' style='display:block; position: absolute; '><img src='http://www.makeitmove.co.uk/'/></div>");
         document.write("<iframe id='betaiframe657f4cb99ede4' src='"+widgetURL+"' width=100% height=400 scrolling='no' style='border:0px;'></iframe>");
         document.write("</div>")
 
@@ -212,7 +212,7 @@ function __makebetaiframebetaiframe657f4cb99ede4() {
                                         // hide spinner
                                         document.getElementById('beta-iframe-spinner').style.display='none';
                             });
-                            beta_modal_firstScript_js.src = 'https://app.rockgympro.com/js/betamodal.js.php';
+                            beta_modal_firstScript_js.src = 'https://cdn.jsdelivr.net/gh/miurhawk/beta-widgets@main/betamodal.js';
                             beta_modal_firstScript.parentNode.insertBefore(beta_modal_firstScript_js, beta_modal_firstScript);
 
                             // sanity check to hide spinner at 5 seconds
