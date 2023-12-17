@@ -121,7 +121,7 @@ function __makebetaiframebetaiframe657f4cb99ede4() {
         }
         document.write("<div>");
         document.write("<div id='beta-iframe-spinner' style='display:block; position: absolute; '><img src='http://www.makeitmove.co.uk/'/></div>");
-        document.write("<iframe id='betaiframe657f4cb99ede4' src='"+widgetURL+"' width=100% height=50 scrolling='no' style='border:0px;'></iframe>");
+        document.write("<iframe id='betaiframe657f4cb99ede4' src='"+widgetURL+"' width=100% height=400 scrolling='no' style='border:0px;'></iframe>");
         document.write("</div>")
 
         var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
